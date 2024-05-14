@@ -1,0 +1,159 @@
+
+BubbleSort_O1:     file format elf32-loongarch
+
+
+Disassembly of section .text:
+
+00010370 <_start>:
+   10370:	00150089 	move	$r9,$r4
+   10374:	1c000104 	pcaddu12i	$r4,8(0x8)
+   10378:	28b35084 	ld.w	$r4,$r4,-812(0xcd4)
+   1037c:	28800065 	ld.w	$r5,$r3,0
+   10380:	02801066 	addi.w	$r6,$r3,4(0x4)
+   10384:	00449063 	srli.w	$r3,$r3,0x4
+   10388:	00409063 	slli.w	$r3,$r3,0x4
+   1038c:	1c000107 	pcaddu12i	$r7,8(0x8)
+   10390:	28b2e0e7 	ld.w	$r7,$r7,-840(0xcb8)
+   10394:	1c000108 	pcaddu12i	$r8,8(0x8)
+   10398:	28b28108 	ld.w	$r8,$r8,-864(0xca0)
+   1039c:	0015006a 	move	$r10,$r3
+   103a0:	1c000101 	pcaddu12i	$r1,8(0x8)
+   103a4:	28b27021 	ld.w	$r1,$r1,-868(0xc9c)
+   103a8:	4c000021 	jirl	$r1,$r1,0
+   103ac:	1c000101 	pcaddu12i	$r1,8(0x8)
+   103b0:	28b25021 	ld.w	$r1,$r1,-876(0xc94)
+   103b4:	4c000021 	jirl	$r1,$r1,0
+
+000103b8 <deregister_tm_clones>:
+   103b8:	02bfc063 	addi.w	$r3,$r3,-16(0xff0)
+   103bc:	29803076 	st.w	$r22,$r3,12(0xc)
+   103c0:	02804076 	addi.w	$r22,$r3,16(0x10)
+   103c4:	1c000104 	pcaddu12i	$r4,8(0x8)
+   103c8:	02b19084 	addi.w	$r4,$r4,-924(0xc64)
+   103cc:	2880008c 	ld.w	$r12,$r4,0
+   103d0:	58001d80 	beq	$r12,$r0,28(0x1c) # 103ec <deregister_tm_clones+0x34>
+   103d4:	1c00010c 	pcaddu12i	$r12,8(0x8)
+   103d8:	28b1918c 	ld.w	$r12,$r12,-924(0xc64)
+   103dc:	58001180 	beq	$r12,$r0,16(0x10) # 103ec <deregister_tm_clones+0x34>
+   103e0:	28803076 	ld.w	$r22,$r3,12(0xc)
+   103e4:	02804063 	addi.w	$r3,$r3,16(0x10)
+   103e8:	4c000180 	jirl	$r0,$r12,0
+   103ec:	28803076 	ld.w	$r22,$r3,12(0xc)
+   103f0:	02804063 	addi.w	$r3,$r3,16(0x10)
+   103f4:	4c000020 	jirl	$r0,$r1,0
+
+000103f8 <register_tm_clones>:
+   103f8:	02bfc063 	addi.w	$r3,$r3,-16(0xff0)
+   103fc:	29803076 	st.w	$r22,$r3,12(0xc)
+   10400:	02804076 	addi.w	$r22,$r3,16(0x10)
+   10404:	1c00010c 	pcaddu12i	$r12,8(0x8)
+   10408:	02b0918c 	addi.w	$r12,$r12,-988(0xc24)
+   1040c:	2880018d 	ld.w	$r13,$r12,0
+   10410:	580041a0 	beq	$r13,$r0,64(0x40) # 10450 <register_tm_clones+0x58>
+   10414:	0280218c 	addi.w	$r12,$r12,8(0x8)
+   10418:	00150005 	move	$r5,$r0
+   1041c:	0280218c 	addi.w	$r12,$r12,8(0x8)
+   10420:	28bfe18d 	ld.w	$r13,$r12,-8(0xff8)
+   10424:	028004a5 	addi.w	$r5,$r5,1(0x1)
+   10428:	5ffff5a0 	bne	$r13,$r0,-12(0x3fff4) # 1041c <register_tm_clones+0x24>
+   1042c:	580024a0 	beq	$r5,$r0,36(0x24) # 10450 <register_tm_clones+0x58>
+   10430:	1c00010c 	pcaddu12i	$r12,8(0x8)
+   10434:	28b0718c 	ld.w	$r12,$r12,-996(0xc1c)
+   10438:	58001980 	beq	$r12,$r0,24(0x18) # 10450 <register_tm_clones+0x58>
+   1043c:	28803076 	ld.w	$r22,$r3,12(0xc)
+   10440:	1c000104 	pcaddu12i	$r4,8(0x8)
+   10444:	02afa084 	addi.w	$r4,$r4,-1048(0xbe8)
+   10448:	02804063 	addi.w	$r3,$r3,16(0x10)
+   1044c:	4c000180 	jirl	$r0,$r12,0
+   10450:	28803076 	ld.w	$r22,$r3,12(0xc)
+   10454:	02804063 	addi.w	$r3,$r3,16(0x10)
+   10458:	4c000020 	jirl	$r0,$r1,0
+
+0001045c <__do_global_dtors_aux>:
+   1045c:	02bfc063 	addi.w	$r3,$r3,-16(0xff0)
+   10460:	29802076 	st.w	$r22,$r3,8(0x8)
+   10464:	29801077 	st.w	$r23,$r3,4(0x4)
+   10468:	29803061 	st.w	$r1,$r3,12(0xc)
+   1046c:	02804076 	addi.w	$r22,$r3,16(0x10)
+   10470:	1c000117 	pcaddu12i	$r23,8(0x8)
+   10474:	02af92f7 	addi.w	$r23,$r23,-1052(0xbe4)
+   10478:	2a0002ec 	ld.bu	$r12,$r23,0
+   1047c:	5c001180 	bne	$r12,$r0,16(0x10) # 1048c <__do_global_dtors_aux+0x30>
+   10480:	57ff3bff 	bl	-200(0xfffff38) # 103b8 <deregister_tm_clones>
+   10484:	0280040c 	addi.w	$r12,$r0,1(0x1)
+   10488:	290002ec 	st.b	$r12,$r23,0
+   1048c:	28803061 	ld.w	$r1,$r3,12(0xc)
+   10490:	28802076 	ld.w	$r22,$r3,8(0x8)
+   10494:	28801077 	ld.w	$r23,$r3,4(0x4)
+   10498:	02804063 	addi.w	$r3,$r3,16(0x10)
+   1049c:	4c000020 	jirl	$r0,$r1,0
+
+000104a0 <frame_dummy>:
+   104a0:	02bfc063 	addi.w	$r3,$r3,-16(0xff0)
+   104a4:	29803076 	st.w	$r22,$r3,12(0xc)
+   104a8:	02804076 	addi.w	$r22,$r3,16(0x10)
+   104ac:	28803076 	ld.w	$r22,$r3,12(0xc)
+   104b0:	02804063 	addi.w	$r3,$r3,16(0x10)
+   104b4:	53ff47ff 	b	-188(0xfffff44) # 103f8 <register_tm_clones>
+
+000104b8 <main>:
+   104b8:	02802410 	addi.w	$r16,$r0,9(0x9)
+   104bc:	1c000111 	pcaddu12i	$r17,8(0x8)
+   104c0:	02ad1231 	addi.w	$r17,$r17,-1212(0xb44)
+   104c4:	0015022f 	move	$r15,$r17
+   104c8:	50002c00 	b	44(0x2c) # 104f4 <main+0x3c>
+   104cc:	02bff18c 	addi.w	$r12,$r12,-4(0xffc)
+   104d0:	58001d8f 	beq	$r12,$r15,28(0x1c) # 104ec <main+0x34>
+   104d4:	28bff18d 	ld.w	$r13,$r12,-4(0xffc)
+   104d8:	2880018e 	ld.w	$r14,$r12,0
+   104dc:	67fff1ae 	bge	$r13,$r14,-16(0x3fff0) # 104cc <main+0x14>
+   104e0:	29bff18e 	st.w	$r14,$r12,-4(0xffc)
+   104e4:	2980018d 	st.w	$r13,$r12,0
+   104e8:	53ffe7ff 	b	-28(0xfffffe4) # 104cc <main+0x14>
+   104ec:	02bffe10 	addi.w	$r16,$r16,-1(0xfff)
+   104f0:	58000e00 	beq	$r16,$r0,12(0xc) # 104fc <main+0x44>
+   104f4:	0280922c 	addi.w	$r12,$r17,36(0x24)
+   104f8:	53ffdfff 	b	-36(0xfffffdc) # 104d4 <main+0x1c>
+   104fc:	00150004 	move	$r4,$r0
+   10500:	4c000020 	jirl	$r0,$r1,0
+
+00010504 <__libc_csu_init>:
+   10504:	02bf8063 	addi.w	$r3,$r3,-32(0xfe0)
+   10508:	29806077 	st.w	$r23,$r3,24(0x18)
+   1050c:	29804079 	st.w	$r25,$r3,16(0x10)
+   10510:	1c000117 	pcaddu12i	$r23,8(0x8)
+   10514:	02a8a2f7 	addi.w	$r23,$r23,-1496(0xa28)
+   10518:	1c000119 	pcaddu12i	$r25,8(0x8)
+   1051c:	02a89339 	addi.w	$r25,$r25,-1500(0xa24)
+   10520:	00115f39 	sub.w	$r25,$r25,$r23
+   10524:	29807061 	st.w	$r1,$r3,28(0x1c)
+   10528:	29805078 	st.w	$r24,$r3,20(0x14)
+   1052c:	2980307a 	st.w	$r26,$r3,12(0xc)
+   10530:	2980207b 	st.w	$r27,$r3,8(0x8)
+   10534:	2980107c 	st.w	$r28,$r3,4(0x4)
+   10538:	00488b39 	srai.w	$r25,$r25,0x2
+   1053c:	58003720 	beq	$r25,$r0,52(0x34) # 10570 <__libc_csu_init+0x6c>
+   10540:	001500dc 	move	$r28,$r6
+   10544:	001500bb 	move	$r27,$r5
+   10548:	0015009a 	move	$r26,$r4
+   1054c:	00150018 	move	$r24,$r0
+   10550:	288002ec 	ld.w	$r12,$r23,0
+   10554:	00150386 	move	$r6,$r28
+   10558:	00150365 	move	$r5,$r27
+   1055c:	00150344 	move	$r4,$r26
+   10560:	02800718 	addi.w	$r24,$r24,1(0x1)
+   10564:	4c000181 	jirl	$r1,$r12,0
+   10568:	028012f7 	addi.w	$r23,$r23,4(0x4)
+   1056c:	5fffe738 	bne	$r25,$r24,-28(0x3ffe4) # 10550 <__libc_csu_init+0x4c>
+   10570:	28807061 	ld.w	$r1,$r3,28(0x1c)
+   10574:	28806077 	ld.w	$r23,$r3,24(0x18)
+   10578:	28805078 	ld.w	$r24,$r3,20(0x14)
+   1057c:	28804079 	ld.w	$r25,$r3,16(0x10)
+   10580:	2880307a 	ld.w	$r26,$r3,12(0xc)
+   10584:	2880207b 	ld.w	$r27,$r3,8(0x8)
+   10588:	2880107c 	ld.w	$r28,$r3,4(0x4)
+   1058c:	02808063 	addi.w	$r3,$r3,32(0x20)
+   10590:	4c000020 	jirl	$r0,$r1,0
+
+00010594 <__libc_csu_fini>:
+   10594:	4c000020 	jirl	$r0,$r1,0

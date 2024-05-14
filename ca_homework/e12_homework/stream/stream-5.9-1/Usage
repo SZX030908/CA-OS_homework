@@ -1,0 +1,7 @@
+usage: run.sh   [-n #]
+if you will run with singleProcessor,then:
+  ./Run.sh       
+if you will run with MutilProcessor,the number is the number of threads
+  ./Run.sh -n number
+results: 
+ The results save in Directory "results"

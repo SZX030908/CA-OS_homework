@@ -1,0 +1,30 @@
+-------------------------------------------------------------
+STREAM version $Revision: 5.9 $
+-------------------------------------------------------------
+This system uses 4 bytes per FLOAT PRECISION word.
+-------------------------------------------------------------
+Array size = 8000000, Offset = 0
+Total memory required = 91.6 MB.
+Each test is run 100 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Printing one line per active thread....
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 3430 microseconds.
+   (= 3430 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       18311.9896       0.0038       0.0035       0.0047
+Scale:      15944.1349       0.0043       0.0040       0.0066
+Add:        21229.1445       0.0058       0.0045       0.0079
+Triad:      20507.9548       0.0051       0.0047       0.0066
+-------------------------------------------------------------
+Solution Validates
+-------------------------------------------------------------
